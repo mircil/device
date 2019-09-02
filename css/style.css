@@ -63,7 +63,7 @@ a {
   position: relative;
 
   display: inline-block;
-  padding: 0 10px;
+  padding: 10px 0;
 
   font-weight: 800;
   font-size: 18px;
@@ -87,7 +87,7 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  left: 2px;
+  left: -2px;
   z-index: -1;
 
   width: inherit;
@@ -96,28 +96,28 @@ a {
 
   background-color: #f0c52e;
 
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .btn:hover::before,
 .btn:focus::before {
-  top: -8px;
+  top: 0px;
 
   height: 40px;
   margin: 0;
 
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .btn:active::before {
-  top: -8px;
+  top: 0px;
 
   height: 40px;
   margin: 0;
 
   color: rgba(0, 0, 0, 0.3);
 
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 /* End of global styles */
@@ -474,7 +474,7 @@ a {
   position: absolute;
   top: 22px;
   left: -60px;
-  z-index: 1;
+  z-index: 2;
 
   display: none;
   width: 1100px;
@@ -515,5 +515,207 @@ a {
   width: 220px;
 }
 
+
+.slider {
+  position: relative;
+  z-index: 1;
+}
+
+.slider-item-wrap {
+  position: relative;
+  display: flex;
+  margin-top: -110px;
+  padding-bottom: 97px;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item-2 {
+  padding-bottom: 85px;
+}
+
+.slider-item-3 {
+  padding-bottom: 114px;
+}
+
+.slider-img-wrap {
+  width: 540px;
+  margin-right: 40px;
+
+  text-align: center;
+}
+
+.slider-item-1-img img {
+  width: 384px;
+  height: 486px;
+}
+
+.slider-item-2-img img {
+  width: 345px;
+  height: 485px;
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+.slider-item-3-img img {
+  width: 526px;
+  height: 334px;
+  margin-top: 65px;
+  margin-left: 30px;
+}
+
+.slider-descr-wrap {
+  position: relative;
+  width: 560px;
+  padding-top: 78px;
+}
+
+.slider-descr-wrap::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+
+  background-color: #fff;
+}
+
+.slider-descr-wrap::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 50px;
+  z-index: -1;
+
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 179px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #fff;
+}
+
+.slider-descr-item-1::after {
+  content: "01";
+}
+
+.slider-descr-item-2::after {
+  content: "02";
+}
+
+.slider-descr-item-3::after {
+  content: "03";
+}
+
+.slider-descr-wrap b {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.slider-descr-wrap p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  color: #464646;
+}
+
+.slider-descr-wrap .btn {
+  width: 220px;
+  margin-top: 42px;
+  margin-bottom: 46px;
+  margin-left: 2px;
+
+  background: none;
+  border: none;
+}
+
+.slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 82px;
+  bottom: 253px;
+  z-index: 1;
+  width: 78px;
+}
+
+.slider-controls label {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  display: none;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.slider input:focus ~ .slider-controls label {
+  outline: 1px solid #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+#btn-1:checked ~ .slider-item-1 {
+  display: flex;
+}
+#btn-2:checked ~ .slider-item-2 {
+  display: flex;
+}
+#btn-3:checked ~ .slider-item-3 {
+  display: flex;
+}
+
+.slider input[id="btn-1"]:checked ~ .slider-controls label[for="btn-1"]::before,
+.slider input[id="btn-2"]:checked ~ .slider-controls label[for="btn-2"]::before,
+.slider input[id="btn-3"]:checked ~ .slider-controls label[for="btn-3"]::before {
+  display: block;
+}
+
+.slider-item-features-top {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000;
+}
+
+.slider-item-features td:nth-child(1),
+.slider-item-features td:nth-child(3) {
+  width: 160px;
+}
+
+.slider-item-features td:nth-child(2) {
+  width: 140px;
+}
 /* End of header styles */
 
