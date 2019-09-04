@@ -91,9 +91,9 @@
                   <td>Карбон</td>
                 </tr>
                 <tr class="slider-item-features-bottom">
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                  <td class="slider-table-bot-cell">Длина палки</td>
+                  <td class="slider-table-bot-cell">Вес палки</td>
+                  <td class="slider-table-bot-cell">Материал</td>
                 </tr>
               </table>
             </div>
@@ -111,7 +111,7 @@
                   <td>48 часов</td>
                 </tr>
                 <tr class="slider-item-features-bottom">
-                  <td>Без подзарядки</td>
+                  <td class="slider-table-bot-cell">Без подзарядки</td>
                 </tr>
               </table>
             </div>
@@ -130,8 +130,8 @@
                   <td>50 м</td>
                 </tr>
                 <tr class="slider-item-features-bottom">
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
+                  <td class="slider-table-bot-cell">Дальность полета</td>
+                  <td class="slider-table-bot-cell">Радиус поражения</td>
                 </tr>
               </table>
             </div>
@@ -143,39 +143,51 @@
           <ul class="main-categories-list">
             <li class="categories-list-item">
               <a href="#">
-                <img src="img/categories-vr.svg" alt="Очки VR" width="97" height="55">
+                <div class="categories-list-wrap categories-list-wrap-vr">
+                  <img src="img/categories-vr.svg" alt="Очки VR" width="97" height="55">
+                </div>
+                <p class="categories-name">Виртуальная реальность</p>
               </a>
-              <p class="categories-name">Виртуальная реальность</p>
             </li>
             <li class="categories-list-item">
               <a href="#">
-                <img src="img/categories-selfie.svg" alt="Очки VR" width="86" height="117">
+                <div class="categories-list-wrap categories-list-wrap-selfie">
+                  <img src="img/categories-selfie.svg" alt="Монопод" width="86" height="117">
+                </div>
+                <p class="categories-name">Моноподы для селфи</p>
               </a>
-              <p class="categories-name">Моноподы для селфи</p>
             </li>
             <li class="categories-list-item">
               <a href="#">
-                <img src="img/categories-camera.svg" alt="Очки VR" width="71" height="87">
+                <div class="categories-list-wrap categories-list-wrap-camera">
+                  <img src="img/categories-camera.svg" alt="Экшн-камера" width="71" height="87">
+                </div>
+                <p class="categories-name">Экшн-камеры</p>
               </a>
-              <p class="categories-name">Экшн-камеры</p>
             </li>
             <li class="categories-list-item">
               <a href="#">
-                <img src="img/categories-fitness.svg" alt="Очки VR" width="107" height="65">
+                <div class="categories-list-wrap categories-list-wrap-fitness">
+                  <img src="img/categories-fitness.svg" alt="Фитнес-браслет" width="107" height="65">
+                </div>
+                <p class="categories-name">Фитнес-браслеты</p>
               </a>
-              <p class="categories-name">Фитнес-браслеты</p>
             </li>
             <li class="categories-list-item">
               <a href="#">
-                <img src="img/categories-watch.svg" alt="Очки VR" width="56" height="98">
+                <div class="categories-list-wrap categories-list-wrap-watch">
+                  <img src="img/categories-watch.svg" alt="Умные часы" width="56" height="98">
+                </div>
+                <p class="categories-name">Умные часы</p>
               </a>
-              <p class="categories-name">Умные часы</p>
             </li>
             <li class="categories-list-item">
               <a href="#">
-                <img src="img/categories-copter.svg" alt="Очки VR" width="132" height="69">
+                <div class="categories-list-wrap categories-list-wrap-copter">
+                  <img src="img/categories-copter.svg" alt="Квадрокоптер" width="132" height="69">
+                </div>
+                <p class="categories-name">Квадрокоптеры</p>
               </a>
-              <p class="categories-name">Квадрокоптеры</p>
             </li>
           </ul>
         </section>
@@ -183,28 +195,30 @@
 
       <section class="services">
         <div class="container">
-          <div class="services-slider">
-            <h2 class="visually-hidden">Наши сервисы</h2>
-            <input id="services-control-1" type="radio" name="services-control" checked>
-            <input id="services-control-2" type="radio" name="services-control">
-            <input id="services-control-3" type="radio" name="services-control">
-          </div>
-          <div class="services-slider-controls">
-            <label for="services-control-1">Доставка</label>
-            <label for="services-control-2">Гарантия</label>
-            <label for="services-control-3">Кредит</label>
-          </div>
-          <div class="services-slider-item services-slider-delivery">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div>
-          <div class="services-slider-item services-slider-warranty">
-            <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-          </div>
-          <div class="services-slider-item services-slider-credit">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <div class="services-wrap">
+            <div class="services-slider">
+              <h2 class="visually-hidden">Наши сервисы</h2>
+              <input class="visually-hidden" id="services-control-1" type="radio" name="services-control" checked>
+              <input class="visually-hidden" id="services-control-2" type="radio" name="services-control">
+              <input class="visually-hidden" id="services-control-3" type="radio" name="services-control">
+            </div>
+            <div class="services-slider-controls">
+              <label for="services-control-1">Доставка</label>
+              <label for="services-control-2">Гарантия</label>
+              <label for="services-control-3">Кредит</label>
+            </div>
+            <div class="services-slider-item services-slider-delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="services-slider-item services-slider-warranty">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            </div>
+            <div class="services-slider-item services-slider-credit">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
           </div>
         </div>
       </section>
