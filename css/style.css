@@ -747,7 +747,7 @@ a {
 /* Main categories styles */
 
 .main-categories {
-  margin-bottom: 176px;
+  margin-bottom: 182px;
 }
 
 .main-categories-list {
@@ -863,12 +863,14 @@ a {
   background-color: #e5e5e5;
 }
 
-.services-wrap {
+.services-slider {
   display: flex;
 }
 
 .services-slider-item {
   position: relative;
+  display: none;
+  min-height: 288px;
   top: -26px;
   width: 460px;
   margin-left: 120px;
@@ -877,12 +879,36 @@ a {
 .services-slider-delivery::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10px;
   right: -234px;
   width: 136px;
   height: 164px;
 
   background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+}
+
+.services-slider-warranty::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -253px;
+  width: 171px;
+  height: 195px;
+
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.services-slider-credit::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -258px;
+  width: 156px;
+  height: 188px;
+
+  background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
 }
 
@@ -893,6 +919,7 @@ a {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.02em;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #000;
 }
@@ -910,11 +937,11 @@ a {
 .services-slider-controls::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: -80px;
   right: -4px;
 
   width: 7px;
-  height: 100%;
+  height: 319px;
 
   background-color: #000;
 }
@@ -927,7 +954,6 @@ a {
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 3px;
 
   font-weight: 800;
   font-size: 18px;
@@ -989,14 +1015,34 @@ a {
   color: #f7e184;
 }
 
+.services-slider input[id="services-control-1"]:checked ~ .services-slider-controls label[for="services-control-1"]::before,
+.services-slider input[id="services-control-2"]:checked ~ .services-slider-controls label[for="services-control-2"]::before,
+.services-slider input[id="services-control-3"]:checked ~ .services-slider-controls label[for="services-control-3"]::before {
+  top: 1px;
+  height: 40px;
+  margin: 0;
 
-
-
-.services-slider-warranty,
-.services-slider-credit {
-  display: none;
+  background-color: #000;
 }
 
+.services-slider input[id="services-control-1"]:checked ~ .services-slider-controls label[for="services-control-1"]::after,
+.services-slider input[id="services-control-2"]:checked ~ .services-slider-controls label[for="services-control-2"]::after,
+.services-slider input[id="services-control-3"]:checked ~ .services-slider-controls label[for="services-control-3"]::after {
+  top: 1px;
+  width: 120px;
+  height: 40px;
+  margin: 0;
+
+  background-color: #000;
+
+  transition: all 0.2s linear;
+}
+
+.services-slider input[id="services-control-1"]:checked ~ .services-slider-delivery,
+.services-slider input[id="services-control-2"]:checked ~ .services-slider-warranty,
+.services-slider input[id="services-control-3"]:checked ~ .services-slider-credit {
+  display: block;
+}
 
 
 /* End of Services styles */
