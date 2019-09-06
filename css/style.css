@@ -859,6 +859,7 @@ a {
 
 .services {
   position: relative;
+  margin-bottom: 94px;
 
   background-color: #e5e5e5;
 }
@@ -876,6 +877,10 @@ a {
   margin-left: 120px;
 }
 
+.services-slider-credit {
+  width: 430px;
+}
+
 .services-slider-delivery::before {
   content: "";
   position: absolute;
@@ -891,7 +896,7 @@ a {
 .services-slider-warranty::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: -13px;
   right: -253px;
   width: 171px;
   height: 195px;
@@ -903,7 +908,7 @@ a {
 .services-slider-credit::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: -13px;
   right: -258px;
   width: 156px;
   height: 188px;
@@ -1046,3 +1051,137 @@ a {
 
 
 /* End of Services styles */
+
+
+
+/* Brands styles */
+
+.brands {
+  margin-bottom: 93px;
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.brands-item {
+  display: flex;
+  width: 260px;
+  height: 100px;
+}
+
+.brands-item a {
+  width: 260px;
+  height: 100px;
+
+  opacity: 0.2;
+
+  transition: all 0.2s linear;
+}
+
+.brands-item a:hover,
+.brands-item a:focus {
+  opacity: 1;
+
+  transition: all 0.2s linear;
+}
+
+.brands-item-dji {
+  background-image: url("../img/logo-1-gray.jpg");
+}
+
+.brands-item-dji:hover,
+.brands-item-dji:focus {
+  background-image: url("../img/logo-1.jpg");
+}
+
+.brands-item-spgadgets {
+  background-image: url("../img/logo-2-gray.jpg");
+}
+
+.brands-item-spgadgets:hover,
+.brands-item-spgadgets:focus {
+  background-image: url("../img/logo-2.jpg");
+}
+
+.brands-item-gopro {
+  background-image: url("../img/logo-3-gray.jpg");
+}
+
+.brands-item-gopro:hover,
+.brands-item-gopro:focus {
+  background-image: url("../img/logo-3.jpg");
+}
+
+.brands-item-vive {
+  background-image: url("../img/logo-4-gray.jpg");
+}
+
+.brands-item-vive:hover,
+.brands-item-vive:focus {
+  background-image: url("../img/logo-4.jpg");
+}
+
+/* End of Brands styles */
+
+
+
+/* About styles */
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 51px;
+}
+
+.about {
+  position: relative;
+  width: 560px;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: -52px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000;
+}
+
+.about .btn,
+.contacts .btn {
+  width: 260px;
+
+  background: none;
+  border: none: ;
+}
+
+.contacts {
+  position: relative;
+  width: 560px;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: -52px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000;
+}
+
+
+/* End of About styles */
