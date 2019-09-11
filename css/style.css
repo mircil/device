@@ -1280,6 +1280,17 @@ a {
   color: #ffc600;
 }
 
+.footer-logo a:hover {
+  opacity: 0.6;
+
+  transition: all 0.2s linear;
+}
+
+.footer-logo a:active,
+.footer-logo a:focus {
+  opacity: 0.3;
+}
+
 .footer-user-nav-list {
   display: flex;
   flex-grow: 1;
@@ -1293,8 +1304,63 @@ a {
 
 .footer-user-nav-item {
   text-align: right;
+  width: 100px;
 }
 
+.footer-user-nav-item:nth-child(1) {
+  flex-grow: 1;
+  margin-right: 33px;
+}
 
+.footer-user-nav-item:nth-child(2) {
+  margin-right: 22px;
+}
+
+.footer-user-nav-link {
+  position: relative;
+
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-nav-link:active,
+.footer-user-nav-link:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-nav-link:hover::before {
+  opacity: 0.6;
+}
+
+.footer-user-nav-link:active::before,
+.footer-user-nav-link:focus::before {
+  opacity: 0.3;
+}
+
+.footer-user-nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -23px;
+
+  width: 13px;
+  height: 12px;
+  
+  background-repeat: no-repeat;
+}
+
+.footer-user-login::before {
+  left: -26px;
+
+  background-image: url("../img/yellow-user.svg");
+}
+
+.footer-user-compare::before {
+  background-image: url("../img/yellow-compare.svg");
+}
 
 /* End of Footer styles */
