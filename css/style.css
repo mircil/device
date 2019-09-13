@@ -1271,9 +1271,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  min-height: 47px;
 }
 
 .footer-logo {
+  padding-top: 8px;
+
   font-weight: 800;
   font-size: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1356,11 +1360,60 @@ a {
 .footer-user-login::before {
   left: -26px;
 
-  background-image: url("../img/yellow-user.svg");
+  background-image: url("../img/yellow-user.png");
 }
 
 .footer-user-compare::before {
-  background-image: url("../img/yellow-compare.svg");
+  left: -20px;
+  bottom: 2px;
+
+  background-image: url("../img/yellow-compare.png");
+}
+
+.footer-user-cart::before {
+  background-image: url("../img/yellow-cart.png");
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 62px;
+}
+
+.footer-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+
+  list-style: none;
+}
+
+.footer-services-item {
+  margin: 0 auto;
+  margin-right: 33px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.footer-services-item a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-services-item a:active,
+.footer-services-item a:focus {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* End of Footer styles */
