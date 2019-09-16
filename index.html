@@ -272,7 +272,7 @@
             <a class="map" href="#">
               <img src="img/map.jpg" alt="Офис компании находится по адресу: г. Москва, ул. Строителей, 15" width="560" height="222">
             </a>
-            <a class="btn" href="">Напишите нам</a>
+            <a class="btn popup-write-us-open" href="">Напишите нам</a>
           </section>
         </section>
       </div>
@@ -334,29 +334,34 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="popup-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="feedback-form" action="#" method="get">
-        <div class="feedback-form-row">
-          <div class="form-field name-field">
-            <label for="name-field">Ваше имя:</label>
-            <input type="text" name="name" placeholder="Имя Фамилия" id="name-field">
+      <div class="popup-write-us-wrap">
+        <form class="feedback-form" action="#" method="get">
+          <div class="feedback-form-row">
+            <div class="form-field form-field-wrap-name">
+              <label for="name-field">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Имя Фамилия" id="name-field">
+            </div>
+            <div class="form-field form-field-wrap-email">
+              <label for="email-field">Ваш e-mail:</label>
+              <input type="email" name="email" placeholder="email@example.com" id="email-field">
+            </div>
           </div>
-          <div class="form-field email-field">
-            <label for="email-field">Ваш e-mail:</label>
-            <input type="email" name="email" placeholder="email@example.com" id="email-field">
+          <div class="form-field form-field-wrap-message">
+            <label for="text-field">Текст письма:</label>
+            <textarea name="text" placeholder="В свободной форме" id="text-field"></textarea>
           </div>
-        </div>
-        <div class="form-field text-field">
-          <label for="text-field">Текст письма:</label>
-          <textarea name="text" placeholder="В свободной форме" id="text-field"></textarea>
-        </div>
-        <button class="btn btn-form-send" type="submit">Отправить</button>
-      </form>
+          <button class="btn" type="submit">Отправить</button>
+          <button class="popup-write-us-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </form>
+      </div>
     </section>
 
-    <section class="modal-map">
-      <div class="popup-map">
+    <section class="popup-map">
+      <div class="popup-map-wrap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2249.120551793828!2d37.5283841780487!3d55.68689184006446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1566292040352!5m2!1sru!2sua" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
         <button class="popup-map-close" type="button">
           <span class="visually-hidden">Закрыть</span>
