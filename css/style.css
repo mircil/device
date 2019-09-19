@@ -1963,4 +1963,302 @@ a {
   padding-bottom: 47px;
 }
 
+.page-content-header {
+  padding-top: 37px;
+  padding-bottom: 44px;
+  padding-left: 60px;
+}
+
+.page-content-title {
+  margin: 0;
+  padding-bottom: 20px;
+
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 37px;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 19px;
+  width: 5px;
+  height: 5px;
+
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs-item:nth-child(2)::after {
+  right: 16px;
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs-item a {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.breadcrumbs-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-item:last-child a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs-item a:active,
+.breadcrumbs-item a:focus {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.page-content-wrap {
+  display: flex;
+  justify-content: center;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  width: 328px;
+
+  background-color: #efefef;
+}
+
+.sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+
+  background-color: #efefef;
+}
+
+.aside-wrap {
+  background-color: #efefef;
+}
+
+.sidebar h2 {
+  position: relative;
+
+  width: 328px;
+  margin: 0;
+  padding-top: 23px;
+  padding-right: 68px;
+  padding-bottom: 23px;
+  padding-left: 60px;
+  box-sizing: border-box;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: rgba(0,0,0,0.08);
+}
+
+.sidebar h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 328px;
+  width: 100vw;
+  height: 70px;
+
+  background-color: rgba(0,0,0,0.08);
+}
+
+.catalog-section {
+  width: 832px;
+}
+
+.filter {
+  width: 202px;
+  padding-top: 69px;
+  padding-right: 68px;
+}
+
+.filter-item-wrap {
+  position: relative;
+}
+
+.filter-item-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1px;
+
+  width: 201px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.filter-item {
+  width: 202px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-item legend {
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 18px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.filter-item-price legend {
+  padding-bottom: 35px;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.price-controls {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.scale-bar {
+  height: 2px;
+
+  background-color: #dbdbdb;
+}
+
+.scale-bar-current {
+  width: 60%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.price-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px #dadada;
+  cursor: pointer;
+}
+
+.price-toggle:active {
+  width: 22px;
+  height: 22px;
+
+  border: 9px solid #ffffff;
+}
+
+.toggle-min {
+  top: -10px;
+  left: -4px;
+}
+
+.toggle-max {
+  top: -10px;
+  left: 109px;
+}
+
+.price-inputs label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 0;
+}
+
+.price-inputs label:first-child {
+  margin-right: 18px;
+}
+
+.price-inputs input {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 0;
+
+  background: none;
+  border: 0;
+}
+
+.filter-checkbox-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 31px;
+
+  list-style-type: none;
+}
+
+.filter-checkbox-list li {
+  padding-left: 39px;
+}
+
+.filter-checkbox-list label {
+  position: relative;
+
+  font-size: 14px;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: 0.01em;
+
+  cursor: pointer;
+}
+
 /* End of Catalog */
