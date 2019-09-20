@@ -118,24 +118,24 @@
                 <legend>Цвет</legend>
                 <ul class="filter-checkbox-list">
                   <li>
-                    <input class="checkbox filter-input" id="checkbox-1" type="checkbox" name="black" checked>
-                    <label for="checkbox-1">Черный</label>
+                    <input class="checkbox-input visually-hidden" id="checkbox-1" type="checkbox" name="black" checked>
+                    <label class="checkbox-label" for="checkbox-1">Черный</label>
                   </li>
                   <li>
-                    <input class="checkbox filter-input" id="checkbox-2" type="checkbox" name="white">
-                    <label for="checkbox-2">Белый</label>
+                    <input class="checkbox-input visually-hidden" id="checkbox-2" type="checkbox" name="white">
+                    <label class="checkbox-label" for="checkbox-2">Белый</label>
                   </li>
                   <li>
-                    <input class="checkbox filter-input" id="checkbox-3" type="checkbox" name="blue" checked>
-                    <label for="checkbox-3">Синий</label>
+                    <input class="checkbox-input visually-hidden" id="checkbox-3" type="checkbox" name="blue" checked>
+                    <label class="checkbox-label" for="checkbox-3">Синий</label>
                   </li>
                   <li>
-                    <input class="checkbox filter-input" id="checkbox-4" type="checkbox" name="red" checked>
-                    <label for="checkbox-4">Красный</label>
+                    <input class="checkbox-input visually-hidden" id="checkbox-4" type="checkbox" name="red" checked>
+                    <label class="checkbox-label" for="checkbox-4">Красный</label>
                   </li>
                   <li>
-                    <input class="checkbox filter-input" id="checkbox-5" type="checkbox" name="ponk">
-                    <label for="checkbox-5">Розовый</label>
+                    <input class="checkbox-input visually-hidden" id="checkbox-5" type="checkbox" name="pink">
+                    <label class="checkbox-label" for="checkbox-5">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -145,12 +145,12 @@
                 <legend>Bluetooth</legend>
                 <ul class="filter-radio-list">
                   <li>
-                    <input class="radio filter-input" type="radio" name="bluetooth" id="radio-1" value="yes" checked>
-                    <label for="radio-1">Есть</label>
+                    <input class="radio-input visually-hidden" type="radio" name="bluetooth" id="radio-1" value="yes" checked>
+                    <label class="radio-label" for="radio-1">Есть</label>
                   </li>
                   <li>
-                    <input class="radio filter-input" type="radio" name="bluetooth" id="radio-2" value="no">
-                    <label for="radio-2">Нет</label>
+                    <input class="radio-input visually-hidden" type="radio" name="bluetooth" id="radio-2" value="no">
+                    <label class="radio-label" for="radio-2">Нет</label>
                   </li>
                 </ul>
               </fieldset>
@@ -162,18 +162,16 @@
         <section class="catalog-section">
           <h2 class="visually-hidden">Наши товары</h2>
           <section class="catalog-sorting">
-            <div class="catalog-sorting">
-              <h3>Сортировка:</h3>
-              <ul class="catalog-sorting-type">
-                <li><a class="catalog-sorting-type-current" href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По популярности</a></li>
-              </ul>
-              <ul class="catalog-sorting-direction">
-                <li class="sorting-direction-current"><a href="#">По убыванию</a></li>
-                <li><a href="#">По возрастанию</a></li>
-              </ul>
-            </div>
+            <h3>Сортировка:</h3>
+            <ul class="catalog-sorting-type">
+              <li><a class="catalog-sorting-type-current" href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По популярности</a></li>
+            </ul>
+            <ul class="catalog-sorting-direction">
+              <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              <li class="sorting-direction-current"><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+            </ul>
           </section>
 
         <section class="catalog-items">
@@ -213,6 +211,7 @@
             </li>
             <li class="catalog-item">
               <img src="img/catalog-item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+              <span class="catalog-item-new">NEW</span>
               <div class="catalog-item-hover">
                 <a class="btn" href="#">В корзину</a>
                 <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
